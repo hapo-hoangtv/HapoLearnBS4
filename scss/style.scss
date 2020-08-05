@@ -221,7 +221,7 @@
 
 .hapo-banner-space {
   height: 160px;
-  background-image: linear-gradient(white, #E5E5E5);
+  background-image: linear-gradient($mainfootercolor, #E5E5E5);
 }
 
 .hapo-subject {
@@ -248,7 +248,7 @@
 
     .subject-laravel {
       padding: 45px 93px;
-      background-color: #DC594C;
+      background-color: $bkredcolor;
     }
 
     .subject-php {
@@ -260,24 +260,24 @@
 
 .hapolearn-card-title {
   text-align: center;
-  @include font(bold, 25px, 'UTM BryantLG', 37px, #B2D235);
+  @include font(bold, 25px, 'UTM BryantLG', 37px, $menucolor);
 }
 
 .hapolearn-card-text {
   text-align: center;
-  @include font(bold, 14px, 'UTM BryantLG', 20px, #505353);
+  @include font(bold, 14px, 'UTM BryantLG', 20px, $cardtextcolor);
 }
 
 .hapolearn-courses-btn {
-  background-color: #B2D235;
+  background-color: $buttonstartcolor;
   border-radius: 25px;
   box-shadow: inset 0 1.5px 2px #6F8710;
   bottom: 15px;
   padding: 8px 0;
-  @include font(bold, 18px, 'UTM BryantLG', 22px, white);
+  @include font(bold, 18px, 'UTM BryantLG', 22px, $mainfootercolor);
 
   &:hover {
-    color: white;
+    color: $mainfootercolor;
     background-color: #bce41b;
     transform: scale(1.1);
     box-shadow: none;
@@ -308,7 +308,7 @@
 
     .subject-rails {
       padding: 54px 62px;
-      background-color: #DC594C;
+      background-color: $bkredcolor;
     }
 
     .subject-java {
@@ -319,7 +319,7 @@
 }
 
 .hapo-all-courses {
-  @include font(bold, 40px, 'UTM BryantLG', 49px, #90AB26);
+  @include font(bold, 40px, 'UTM BryantLG', 49px, $bannersecondcolor);
 
   img {
     margin-top: 5px;
@@ -328,7 +328,7 @@
   
   &:hover {
     cursor: pointer;
-    color: #90AB26;
+    color: $bannersecondcolor;
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
   }
