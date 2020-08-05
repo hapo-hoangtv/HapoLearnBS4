@@ -229,11 +229,13 @@
 }
 
 .hapolearn-courses {
+
   .subject-courses {
     margin: 0 15px;
     padding: 0;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
     .hapolearn-subject {
       height: 45%;
       object-fit: contain;
@@ -274,6 +276,7 @@
   bottom: 15px;
   padding: 8px 0;
   @include font(bold, 18px, 'UTM BryantLG', 22px, white);
+
   &:hover {
     color: white;
     background-color: #bce41b;
@@ -287,11 +290,13 @@
 }
 
 .hapolearn-othercourses {
+
   .subject-courses {
     margin: 0 15px;
     padding: 0;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
     .hapolearn-subject {
       height: 45%;
       object-fit: contain;
@@ -317,6 +322,7 @@
 
 .hapo-all-courses {
   @include font(bold, 40px, 'UTM BryantLG', 49px, #90AB26);
+  
   img {
     margin-top: 5px;
     margin-left: 5px;

@@ -432,8 +432,10 @@
 
   .hapolearn-courses {
     align-items: center;
+
     .subject-courses {
       margin-bottom: 30px;
+
       .hapolearn-subject {
         height: 45%;
       }
@@ -454,19 +456,19 @@
   }
   
   .hapolearn-card-title {
-    @include font(bold, 20px, 'UTM BryantLG', 25px, #B2D235);
     margin-bottom: 14px;
+    @include font(bold, 20px, 'UTM BryantLG', 25px, #B2D235);
   }
   
   .hapolearn-card-text {
-    @include font(normal, 14px, 'UTM BryantLG', 20px, #505353);
     margin-top: 10px;
+    @include font(normal, 14px, 'UTM BryantLG', 20px, #505353);
   }
   
   .hapolearn-courses-btn {
-    @include font(bold, 18px, 'UTM BryantLG', 22px, white);
     padding: 9px 37px 11px 36px;
     margin-top: 29px;
+    @include font(bold, 18px, 'UTM BryantLG', 22px, white);
   }
   
   .hapo-other-subject {
@@ -476,10 +478,12 @@
   
   .hapolearn-othercourses {
     align-items: center;
+
     .subject-courses {
       margin-bottom: 30px;
+
       .hapolearn-subject {
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 15px 15px 0 0;
         height: 45%;
       }
       
@@ -500,6 +504,7 @@
   .hapo-all-courses {
     letter-spacing: -0.02em;
     @include font(bold, 28px, 'UTM BryantLG', 34px, #90AB26);
+
     img {
       width: 34px;
       height: 19px;
