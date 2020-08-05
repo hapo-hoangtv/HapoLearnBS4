@@ -4,17 +4,21 @@
       padding: 0;
     }
   }
+
   .banner {
     height: 350px;
+
     .hapo-banner {
       transform: translateY(25%);
       margin-left: 30px;
+
       .banner-learn {
-        @include font(normal, 30px, 'UTM BryantLG', 37px, #11114E);
+        @include font(normal, 30px, 'UTM BryantLG', 37px, $hapo_title_color);
       }
 
       .banner-title {
-        @include font(bold, 30px, 'UTM BryantLG', 37px, #11114E);
+        @include font(bold, 30px, 'UTM BryantLG', 37px, $hapo_title_color);
+
         img {
           width: 35px;
           height: 35px;
@@ -25,26 +29,27 @@
         letter-spacing: -0.05em;
         height: 40px;
         margin-top: 10px;
-        @include font(normal, 16px, 'UTM BryantLG', 20px, #505353);
+        @include font(normal, 16px, 'UTM BryantLG', 20px, $card_text_color);
       }
 
       .btn-start {
         padding: 12px 40px;
         margin-top: 20px;
         -webkit-text-stroke-width: 0.5px;
-        @include font(normal, 16px, 'UTM BryantLG', 20px, #FFFFFF);
+        @include font(normal, 16px, 'UTM BryantLG', 20px, $main_footer_color);
       }
     }
   }
+
   .footer-menu {
     a {
-      @include font(normal, 18px, 'UTM BryantLG', 22px, $mainfootercolor);
+      @include font(normal, 18px, 'UTM BryantLG', 22px, $main_footer_color);
     }
   }
 
   .footer-logo-note {
     margin-left: 45px;
-    @include font(normal, 16px, 'UTM BryantLG', 20px, $mainfootercolor);
+    @include font(normal, 16px, 'UTM BryantLG', 20px, $main_footer_color);
   }
 
   .footer-logo {
@@ -53,36 +58,41 @@
 
   .social {
     margin: auto;
+
     a {
       margin: 0;
+
       img {
         width: 40px;
         height: 40px;
       }
 
       p {
-        @include font(normal, 18px, 'UTM BryantLG', 20px, $mainfootercolor);
+        @include font(normal, 18px, 'UTM BryantLG', 20px, $main_footer_color);
       }
     }
   }
+
   .banner-second {
     padding-bottom: 80px;
+
     .become-title {
-      @include font(bold, 35px, 'UTM BryantLG', 43px, $mainfootercolor);
+      @include font(bold, 35px, 'UTM BryantLG', 43px, $main_footer_color);
       padding-top: 40px;
     }
 
     .btn-start-learn {
       padding: 10px;
       margin-top: 20px;
-      @include font(bold, 20px, 'UTM BryantLG', 25px, $bannersecondcolor);
+      @include font(bold, 20px, 'UTM BryantLG', 25px, $banner_second_color);
       border-radius: 35px;
     }
   }
 
   .hapo-title {
     margin-top: 60px;
-    @include font(bold, 50px, 'UTM BryantLG', 61px, $hapotitlecolor);
+    @include font(bold, 50px, 'UTM BryantLG', 61px, $hapo_title_color);
+
     .underline {
       border-bottom: 4px solid #B2D235;
       border-radius: 3px;
@@ -95,9 +105,11 @@
       .statistic-learn {
         margin-top: 28px;
         letter-spacing: -0.05em;
+
         span {
           @include font(bold, 40px, 'UTM BryantLG', 49px, #505353);
         }
+
         p {
           @include font(bold, 40px, 'UTM BryantLG', 49px, #B2D235);
         }
@@ -113,10 +125,12 @@
     .question-why-left {
       display: flex;
       justify-content: center;
+
       .hapo-question-body {
         margin-top: -150px;
+
         .reason {
-          @include font(normal, 16px, 'UTM BryantLG', 20px, $mainfootercolor);
+          @include font(normal, 16px, 'UTM BryantLG', 20px, $main_footer_color);
           letter-spacing: -0.05em;
           margin-left: 20px;
           margin-top: 15px;
@@ -140,7 +154,7 @@
   .hapo-question {
     .why-one {
       .hapo-question-why {
-        @include font(bold, 50px, 'UTM BryantLG', 61px, $mainfootercolor);
+        @include font(bold, 50px, 'UTM BryantLG', 61px, $main_footer_color);
         margin-top: 37px;
         opacity: 1;
       }
@@ -148,6 +162,7 @@
 
     .why-two {
       margin-top: -60px;
+
       .hapo-question-title {
         opacity: 0;
       }
@@ -157,6 +172,7 @@
   .hapolearn-courses {
     .subject-courses {
       margin: 0 8px;
+
       .hapolearn-subject {
         height: 35%;
       }
@@ -177,7 +193,7 @@
   }
   
   .hapolearn-card-title {
-    @include font(bold, 19px, 'UTM BryantLG', 25px, #B2D235);
+    @include font(bold, 19px, 'UTM BryantLG', 25px, $menu_color);
   }
   
   .hapolearn-card-text {
@@ -187,12 +203,12 @@
     -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    @include font(normal, 14px, 'UTM BryantLG', 18px, #505353);
+    @include font(normal, 14px, 'UTM BryantLG', 18px, $card_text_color);
   }
   
   .hapolearn-courses-btn {
     letter-spacing: -0.05em;
-    @include font(bold, 10px, 'UTM BryantLG', 12px, white);
+    @include font(bold, 10px, 'UTM BryantLG', 12px, $main_footer_color);
   }
   
   .hapo-other-subject {
@@ -202,6 +218,7 @@
   .hapolearn-othercourses {
     .subject-courses {
       margin: 0 8px;
+
       .hapolearn-subject {
         height: 35%;
       }
@@ -222,7 +239,8 @@
 
   .hapo-all-courses {
     letter-spacing: -0.02em;
-    @include font(bold, 28px, 'UTM BryantLG', 34px, #90AB26);
+    @include font(bold, 28px, 'UTM BryantLG', 34px, $banner_second_color);
+
     img {
       width: 34px;
       height: 19px;
@@ -234,6 +252,7 @@
   .header-all {
     .header-logo {
       padding: 0;
+
       .img-logo {
         width: 150px;
         height: 30px;
@@ -244,9 +263,10 @@
     .header-menu {
       a {
         text-align: center;
+
         &:hover {
-          color: $menucolor;
-          background-color: #FFFFFF;
+          color: $menu_color;
+          background-color: $main_footer_color;
         }
       }
     }
@@ -254,17 +274,20 @@
 
   .banner {
     height: 200px;
+
     .hapo-banner {
       transform: translateY(100%);
       margin-left: 40px;
       margin-bottom: 5px;
       justify-content: center;
+
       .banner-learn {
-        @include font(normal, 30px, 'UTM BryantLG', 37px, #11114E);
+        @include font(normal, 30px, 'UTM BryantLG', 37px, $hapo_title_color);
       }
 
       .banner-title {
-        @include font(bold, 30px, 'UTM BryantLG', 37px, #11114E);
+        @include font(bold, 30px, 'UTM BryantLG', 37px, $hapo_title_color);
+
         img {
           width: 35px;
           height: 35px;
@@ -275,13 +298,13 @@
         letter-spacing: -0.05em;
         height: 40px;
         margin-top: 10px;
-        @include font(normal, 16px, 'UTM BryantLG', 20px, #505353);
+        @include font(normal, 16px, 'UTM BryantLG', 20px, $card_text_color);
       }
 
       .btn-start {
         padding: 12px 40px;
         margin-top: 20px;
-        @include font(bold, 18px, 'UTM BryantLG', 22px, #FFFFFF);
+        @include font(bold, 18px, 'UTM BryantLG', 22px, $main_footer_color);
       }
 
       a {
@@ -306,9 +329,10 @@
   .footer-des {
     order: 3;
     margin-bottom: 50px;
+
     p {
       margin-left: 25px;
-      @include font(normal, 14px, 'UTM BryantLG', 17px, $mainfootercolor);
+      @include font(normal, 14px, 'UTM BryantLG', 17px, $main_footer_color);
     }
   }
 
@@ -316,23 +340,27 @@
     order: 4;
     margin-bottom: 50px;
     margin-left: -35px;
+
     a {
       margin-right: -10px;
       margin-top: -15px;
+
       img {
         width: 30px;
         height: 30px;
       }
+
       p {
-        @include font(normal, 16px, 'UTM BryantLG', 18px, $mainfootercolor);
+        @include font(normal, 16px, 'UTM BryantLG', 18px, $main_footer_color);
       }
     }
   }
 
   .banner-second {
     padding-bottom: 50px;
+
     .become-title {
-      @include font(bold, 23px, 'UTM BryantLG', 28px, $mainfootercolor);
+      @include font(bold, 23px, 'UTM BryantLG', 28px, $main_footer_color);
       padding-top: 34px;
       letter-spacing: -0.02em;
     }
@@ -340,7 +368,7 @@
     .btn-start-learn {
       padding: 7px;
       margin-top: 15px;
-      @include font(bold, 18px, 'UTM BryantLG', 22px, $bannersecondcolor);
+      @include font(bold, 18px, 'UTM BryantLG', 22px, $banner_second_color);
       letter-spacing: -0.05em;
       border-radius: 35px;
     }
@@ -349,7 +377,8 @@
   .hapo-title {
     margin-top: 50px;
     margin-left: 10px;
-    @include font(bold, 40px, 'UTM BryantLG', 49px, $hapotitlecolor);
+    @include font(bold, 40px, 'UTM BryantLG', 49px, $hapo_title_color);
+
     .underline {
       border-bottom: 3px solid #B2D235;
       border-radius: 3px;
@@ -362,15 +391,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .statistic-learn {
         margin-top: 26px;
         letter-spacing: -0.05em;
+
         span {
-          @include font(bold, 40px, 'UTM BryantLG', 49px, #505353);
+          @include font(bold, 40px, 'UTM BryantLG', 49px, $card_text_color);
         }
 
         p {
-          @include font(bold, 40px, 'UTM BryantLG', 49px, #B2D235);
+          @include font(bold, 40px, 'UTM BryantLG', 49px, $button_start_color);
         }
       }
     }
@@ -378,6 +409,7 @@
 
   .hapo-question {
     margin-top: 220px;
+
     .question-logo {
       margin-top: -100px;
     }
@@ -385,8 +417,9 @@
     .question-why-left {
       .hapo-question-body {
         margin-left: 24px;
+
         .reason {
-          @include font(normal, 14px, 'UTM BryantLG', 17px, $mainfootercolor);
+          @include font(normal, 14px, 'UTM BryantLG', 17px, $main_footer_color);
           letter-spacing: -0.05em;
           margin-top: 15px;
         }
@@ -410,7 +443,7 @@
   .hapo-question {
     .why-one {
       .hapo-question-why {
-        @include font(bold, 40px, 'UTM BryantLG', 40px, $mainfootercolor);
+        @include font(bold, 40px, 'UTM BryantLG', 40px, $main_footer_color);
         margin-top: 30px;
         margin-left: -45px;
         opacity: 1;
@@ -419,6 +452,7 @@
 
     .why-two {
       padding-top: 50px;
+
       .hapo-question-title {
         opacity: 0;
       }
@@ -457,18 +491,18 @@
   
   .hapolearn-card-title {
     margin-bottom: 14px;
-    @include font(bold, 20px, 'UTM BryantLG', 25px, #B2D235);
+    @include font(bold, 20px, 'UTM BryantLG', 25px, $menu_color);
   }
   
   .hapolearn-card-text {
     margin-top: 10px;
-    @include font(normal, 14px, 'UTM BryantLG', 20px, #505353);
+    @include font(normal, 14px, 'UTM BryantLG', 20px, $card_text_color);
   }
   
   .hapolearn-courses-btn {
     padding: 9px 37px 11px 36px;
     margin-top: 29px;
-    @include font(bold, 18px, 'UTM BryantLG', 22px, white);
+    @include font(bold, 18px, 'UTM BryantLG', 22px, $main_footer_color);
   }
   
   .hapo-other-subject {
@@ -503,7 +537,7 @@
 
   .hapo-all-courses {
     letter-spacing: -0.02em;
-    @include font(bold, 28px, 'UTM BryantLG', 34px, #90AB26);
+    @include font(bold, 28px, 'UTM BryantLG', 34px, $banner_second_color);
 
     img {
       width: 34px;
