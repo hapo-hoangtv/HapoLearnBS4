@@ -229,7 +229,6 @@
 }
 
 .hapolearn-courses {
-
   .subject-courses {
     margin: 0 15px;
     padding: 0;
@@ -290,7 +289,6 @@
 }
 
 .hapolearn-othercourses {
-
   .subject-courses {
     margin: 0 15px;
     padding: 0;
@@ -322,7 +320,7 @@
 
 .hapo-all-courses {
   @include font(bold, 40px, 'UTM BryantLG', 49px, #90AB26);
-  
+
   img {
     margin-top: 5px;
     margin-left: 5px;
