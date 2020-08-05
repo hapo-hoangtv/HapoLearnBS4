@@ -1,4 +1,5 @@
 @import 'variable';
+
 .header-all {
   .header-logo {
     padding: 10px 0 10px 30px;
@@ -215,6 +216,117 @@
         @include font(bold,60px,'UTM BryantLG',74px,#B2D235);
       }
     }
+  }
+}
+
+.hapo-banner-space {
+  height: 160px;
+  background-image: linear-gradient(white, #E5E5E5);
+}
+
+.hapo-subject {
+  margin-top: -100px;
+}
+
+.hapolearn-courses {
+  .subject-courses {
+    margin: 0 15px;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    .hapolearn-subject {
+      height: 45%;
+      object-fit: contain;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .subject-html {
+      padding: 45px 72px;
+      background-color: #3F6185;
+    }
+
+    .subject-laravel {
+      padding: 45px 93px;
+      background-color: #DC594C;
+    }
+
+    .subject-php {
+      padding: 45px 72px;
+      background-color: #556598;
+    }
+  }
+}
+
+.hapolearn-card-title {
+  text-align: center;
+  @include font(bold, 25px, 'UTM BryantLG', 37px, #B2D235);
+}
+
+.hapolearn-card-text {
+  text-align: center;
+  @include font(bold, 14px, 'UTM BryantLG', 20px, #505353);
+}
+
+.hapolearn-courses-btn {
+  background-color: #B2D235;
+  border-radius: 25px;
+  box-shadow: inset 0 1.5px 2px #6F8710;
+  bottom: 15px;
+  padding: 8px 0;
+  @include font(bold, 18px, 'UTM BryantLG', 22px, white);
+  &:hover {
+    color: white;
+    background-color: #bce41b;
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+}
+
+.hapo-other-subject {
+  margin-top: 50px;
+}
+
+.hapolearn-othercourses {
+  .subject-courses {
+    margin: 0 15px;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    .hapolearn-subject {
+      height: 45%;
+      object-fit: contain;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .subject-css {
+      padding: 35px 86px;
+      background-color: #24ABE2;
+    }
+
+    .subject-rails {
+      padding: 54px 62px;
+      background-color: #DC594C;
+    }
+
+    .subject-java {
+      padding: 17px 55px;
+      background-color: #1B75BB;
+    }
+  }
+}
+
+.hapo-all-courses {
+  @include font(bold, 40px, 'UTM BryantLG', 49px, #90AB26);
+  img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    color: #90AB26;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
   }
 }
 

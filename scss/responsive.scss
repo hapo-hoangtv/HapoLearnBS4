@@ -153,6 +153,81 @@
       }
     }
   }
+
+  .hapolearn-courses {
+    .subject-courses {
+      margin: 0 8px;
+      .hapolearn-subject {
+        height: 35%;
+      }
+
+      .subject-html {
+        padding: 24px 40px 22px 34px;
+      }
+      
+      .subject-laravel {
+        padding: 27px 57px;
+      }
+      
+      .subject-php {
+        padding: 25px 39px 23px 37px;
+      }
+    }
+    
+  }
+  
+  .hapolearn-card-title {
+    @include font(bold, 19px, 'UTM BryantLG', 25px, #B2D235);
+  }
+  
+  .hapolearn-card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 39%;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    @include font(normal, 14px, 'UTM BryantLG', 18px, #505353);
+  }
+  
+  .hapolearn-courses-btn {
+    letter-spacing: -0.05em;
+    @include font(bold, 10px, 'UTM BryantLG', 12px, white);
+  }
+  
+  .hapo-other-subject {
+    margin-top: 50px;
+  }
+  
+  .hapolearn-othercourses {
+    .subject-courses {
+      margin: 0 8px;
+      .hapolearn-subject {
+        height: 35%;
+      }
+
+      .subject-css {
+        padding: 22px 27px 11px 41px;
+      }
+    
+      .subject-rails {
+        padding: 36px 27px 38px 31px;
+      }
+    
+      .subject-java {
+        padding: 13px 25px 13px 32px;
+      }
+    }
+  }
+
+  .hapo-all-courses {
+    letter-spacing: -0.02em;
+    @include font(bold, 28px, 'UTM BryantLG', 34px, #90AB26);
+    img {
+      width: 34px;
+      height: 19px;
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -348,5 +423,90 @@
         opacity: 0;
       }
     }
+  }
+
+  .hapo-subject {
+    margin-top: -80px;
+    padding: 0 50px;
+  }
+
+  .hapolearn-courses {
+    align-items: center;
+    .subject-courses {
+      margin-bottom: 30px;
+      .hapolearn-subject {
+        height: 45%;
+      }
+
+      .subject-html {
+        padding: 34px 54px;
+      }
+      
+      .subject-laravel {
+        padding: 34px 70px;
+      }
+      
+      .subject-php {
+        padding: 32px 54px 34px 54px;
+      }
+    }
+    
+  }
+  
+  .hapolearn-card-title {
+    @include font(bold, 20px, 'UTM BryantLG', 25px, #B2D235);
+    margin-bottom: 14px;
+  }
+  
+  .hapolearn-card-text {
+    @include font(normal, 14px, 'UTM BryantLG', 20px, #505353);
+    margin-top: 10px;
+  }
+  
+  .hapolearn-courses-btn {
+    @include font(bold, 18px, 'UTM BryantLG', 22px, white);
+    padding: 9px 37px 11px 36px;
+    margin-top: 29px;
+  }
+  
+  .hapo-other-subject {
+    margin-top: 50px;
+    padding: 0 50px;
+  }
+  
+  .hapolearn-othercourses {
+    align-items: center;
+    .subject-courses {
+      margin-bottom: 30px;
+      .hapolearn-subject {
+        border-radius: 15px 15px 0px 0px;
+        height: 45%;
+      }
+      
+      .subject-css {
+        padding: 30px 55px 29px 57px;
+      }
+    
+      .subject-rails {
+        padding: 47px 40px 48px 47px;
+      }
+    
+      .subject-java {
+        padding: 22px 40px 22px 47px;
+      }
+    }
+  }
+
+  .hapo-all-courses {
+    letter-spacing: -0.02em;
+    @include font(bold, 28px, 'UTM BryantLG', 34px, #90AB26);
+    img {
+      width: 34px;
+      height: 19px;
+    }
+  }
+  
+  .hapo-banner-space {
+    height: 310px;
   }
 }
