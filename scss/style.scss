@@ -1,26 +1,20 @@
 @import 'variable';
-.header-all {
-  .header-logo {
-    padding: 10px 0 10px 30px;
-    width: 340px;
-    height: 70px;
+.img-logo {
+  height: 70px;
+}
+
+.nav-menu {
+  li {
+    margin: 10px;
   }
-  .header-menu {
-    padding: 28px 0;
-    text-align: center;
-    li {
-      padding: 0 5px;
-    }
-    a {
-      padding: 10px;
-      font: bold 14px/19px Open-Sans;
-      text-transform: uppercase;
-      color: #505353;
-      &:hover {
-        border-radius: 20px;
-        background: $menucolor;
-        text-decoration: none;
-      }
+  
+  a {
+    text-transform: uppercase;
+    border-radius: 17px;
+    @include font(bold,14px,'Open Sans',19px,#505353);
+    &:hover {
+      background-color: #B2D235;
+      color: white ;
     }
   }
 }

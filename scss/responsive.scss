@@ -1,9 +1,10 @@
 @media only screen and (max-width: 768px) {
-  .header-all {
-    .header-logo {
-      padding: 0;
-    }
+  .img-logo {
+    width: 300px;
+    height: auto;
+    margin: 20px;
   }
+   
   .banner {
     height: 350px;
     .hapo-banner {
@@ -156,23 +157,20 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .header-all {
-    .header-logo {
-      padding: 0;
-      .img-logo {
-        width: 150px;
-        height: 30px;
-        transform: translateY(-30%);
-      }
-    }
+  .img-logo {
+    width: 150px;
+    height: auto;
+    margin: 0;
+    transform: translateY(-100%);
+  }
+  
+  .nav-menu {
+    a {
+      text-align: center;
 
-    .header-menu {
-      a {
-        text-align: center;
-        &:hover {
-          color: $menucolor;
-          background-color: #FFFFFF;
-        }
+      &:hover {
+        color: #B2D235;
+        background-color: #FFFFFF;
       }
     }
   }
