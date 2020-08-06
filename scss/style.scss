@@ -7,7 +7,7 @@
   li {
     margin: 10px;
   }
-  
+
   a {
     text-transform: uppercase;
     border-radius: 17px;
@@ -210,6 +210,110 @@
       }
     }
   }
+}
+
+.hapo-feedback {
+  margin-bottom: 245px;
+}
+
+.hapo-feedback-des {
+  margin: 23px auto 40px auto;
+  padding: 0 240px; 
+  letter-spacing: -0.02em;
+  @include font(normal, 25px, 'UTM BryantLG', 31px, #505353); 
+}
+
+.feedback-comment {
+  margin: 10px;
+  border: 0.5px solid #E2E2E2;
+  box-shadow: 1px 1px 5px 0.5px #969694;
+  border-radius: 10px;
+ 
+  &:after,
+  &:before {
+    content: '';
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-top-color: #FFFFFF;
+    border-width: 10px;
+    top: 56.5%;
+    margin-left: 32px;
+  }
+
+  &:before {
+    border-top-color: #E2E2E2;
+    border-width: 12px;
+    top: 56.5%;
+    margin-left: 30px;
+  }
+
+  .comment-content{
+    p {
+      border-left: #D9DADC solid 5px;
+      margin: 20px;
+      padding: 20px;
+      letter-spacing: -0.05em;
+      @include font(normal, 16px, 'UTM BryantLG', 20px, #000000);
+    }
+  }
+ 
+}
+
+.feedback-user {
+  margin-top: 25px;
+  margin-left: 10px;
+  img {
+    height: 60px;
+  }
+}
+
+.user-information {
+  margin-left: 15px;
+  .user-name {
+    @include font(bold, 20px, 'UTM BryantLG', 25px, #11114E);   
+  }
+
+  h4 {
+    margin: 5px 0;
+    @include font(bold, 16px, 'UTM BryantLG', 20px, #505353);   
+  }
+
+  .rate {
+    i {
+      color: #F2C54F;
+      font-size: 14px;
+    }
+  }
+}
+
+.control-next {
+  font-size: 20px;
+  padding: 0 5px;
+  margin-top: -195px;
+  color: #969494;
+    
+  i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+    border: 0.5px solid #C4C4C4;
+  }
+}
+
+.next-left {
+  margin-left: -12px;
+  background-color: white;
+}
+
+.next-right {
+  margin-right: -12px;
+  background-color: white;
 }
 
 @import 'responsive';
