@@ -3,5 +3,3 @@ $(document).ready(function(){
         $('.icon').toggleClass('fa-times');
         $('.icon').toggleClass('fa-bars');
     });
-});
-
