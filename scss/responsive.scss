@@ -1,8 +1,8 @@
 @media only screen and (max-width: 768px) {
-  .header-all {
-    .header-logo {
-      padding: 0;
-    }
+  .img-logo {
+    width: 300px;
+    height: auto;
+    margin: 20px;
   }
 
   .banner {
@@ -249,25 +249,21 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .header-all {
-    .header-logo {
-      padding: 0;
+  .img-logo {
+    width: 150px;
+    height: auto;
+    margin: 0;
+    transform: translateY(-100%);
+  }
+  
+  .nav-menu {
+    a {
+      text-align: center;
 
-      .img-logo {
-        width: 150px;
-        height: 30px;
-        transform: translateY(-30%);
-      }
-    }
+      &:hover {
+        color: #B2D235;
+        background-color: #FFFFFF;
 
-    .header-menu {
-      a {
-        text-align: center;
-
-        &:hover {
-          color: $menu_color;
-          background-color: $main_footer_color;
-        }
       }
     }
   }
